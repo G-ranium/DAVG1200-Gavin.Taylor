@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Table.ma
-//Last modified: Fri, Jan 26, 2024 04:58:30 PM
+//Last modified: Fri, Jan 26, 2024 05:01:24 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "polyBoolean" "polyBoolean" "1.1";
@@ -13,12 +13,12 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "42DC4575-40EB-D792-151C-298E7A0491E4";
+fileInfo "UUID" "2C6C8AA0-4AF3-5682-CAAF-9091E39B1D29";
 createNode transform -s -n "persp";
 	rename -uid "2811FF32-48F2-92F3-E6DD-0FB9C371B421";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -14.480386044790743 16.768515668201594 -14.480386288993389 ;
-	setAttr ".r" -type "double3" 144.73561031724535 -44.999999999999964 180 ;
+	setAttr ".t" -type "double3" -25.43489488494513 7.0504260607102225 -1.8805034049967393 ;
+	setAttr ".r" -type "double3" 348.13561031722674 -94.199999999993068 -2.5444437451708134e-14 ;
 	setAttr ".rp" -type "double3" -3.3306690738754696e-16 -6.6613381477509392e-16 0 ;
 	setAttr ".rpt" -type "double3" 2.2682283192105295e-16 4.1001433201341318e-16 -4.1805585432157853e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -1811,9 +1811,6 @@ createNode shadingEngine -n "lambert2SG";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo1";
 	rename -uid "264361DF-4333-AE04-FC1F-0783AECAD29F";
-createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "DC678444-4CAD-E106-E311-22987D0513EC";
-	setAttr ".sst" -type "string" "";
 createNode script -n "uiConfigurationScriptNode";
 	rename -uid "954AEB98-4D62-AEB2-5153-92B616384792";
 	setAttr ".b" -type "string" (
@@ -1865,6 +1862,9 @@ createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "DDB63512-4F91-9F03-A5A0-C5A44951F73C";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
+createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
+	rename -uid "BE73565C-4A2A-58C3-08F8-9C92A87C8FA2";
+	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;

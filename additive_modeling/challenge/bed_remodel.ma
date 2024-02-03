@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: bed_remodel.ma
-//Last modified: Fri, Feb 02, 2024 07:45:10 PM
+//Last modified: Fri, Feb 02, 2024 08:08:21 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,12 +11,12 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "27F73332-4D02-9B36-A193-D284893CB4D1";
+fileInfo "UUID" "23F8B8CC-46F5-9A87-A616-9BA52E17A3B4";
 createNode transform -s -n "persp";
 	rename -uid "5ACA0038-4C5B-9961-7CE9-16A9E44226D4";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -8.2355785327969304 8.9469007513821825 8.2593632229084371 ;
-	setAttr ".r" -type "double3" -28.199999999999442 320.3999999999964 -4.1278390881455464e-15 ;
+	setAttr ".t" -type "double3" -10.394402109021472 9.0808586545364385 9.0073501564058702 ;
+	setAttr ".r" -type "double3" -22.800000000068081 318.79999999998432 -2.1135643671203926e-15 ;
 	setAttr ".rpt" -type "double3" 5.6275798474581044e-16 -3.9511276214033261e-18 -1.5258562119612174e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "453A148E-4624-D03A-D4DA-CD83E0C0F851";
@@ -25,7 +25,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.0032808398950131233;
 	setAttr ".fcp" 328.08398950131232;
 	setAttr ".fd" 0.16404199475065617;
-	setAttr ".coi" 14.564247723088855;
+	setAttr ".coi" 16.693357723496714;
 	setAttr ".ow" 0.32808398950131235;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -1934,6 +1934,7 @@ createNode mesh -n "left_railing_railingShape" -p "left_railing_railing";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "pillow2" -p "Bed";
 	rename -uid "650719BE-4396-F159-B81D-D791F9E69092";
+	setAttr ".t" -type "double3" 0 0 0.030272582763864561 ;
 	setAttr ".rp" -type "double3" 0.80554142897990988 1.0877932150532881 -6.6432244562508691 ;
 	setAttr ".sp" -type "double3" 0.80554142897990988 1.0877932150532881 -6.6432244562508691 ;
 createNode mesh -n "pillow2Shape" -p "pillow2";
@@ -2762,7 +2763,7 @@ createNode mesh -n "front_leg2Shape" -p "|Bed|front_leg2";
 		 1.70033824 0.2832348 -0.030557409 1.70033813 0.7226333 -0.030557409 1.70033824 0.2832348 0.030557409
 		 1.70033813 0.7226333 0.030557409 -1.71937692 0.28323439 0.030557416 -1.71937692 0.7226333 0.030557416
 		 1.70033824 0.3674905 -0.030557409 1.70033824 0.3674905 0.030557409 -1.71937692 0.36749059 0.030557416
-		 -1.71937692 0.36749059 -0.030557416 -1.51821721 0.36749059 0.030557482 -1.51821721 0.28323439 0.030557482
+		 -1.71937692 0.36749059 -0.030557416 -1.51821721 0.36749059 0.030557483 -1.51821721 0.28323439 0.030557483
 		 -1.51821721 0.28323439 -0.030557377 -1.51821721 0.36749059 -0.030557377 -1.51821721 0.7226333 -0.030557416
 		 -1.51821721 0.7226333 0.030557431 -1.31705749 0.36749059 0.030557431 -1.31705749 0.28323439 0.030557431
 		 -1.31705749 0.28323439 -0.030557416 -1.31705749 0.36749059 -0.030557416 -1.31705749 0.7226333 -0.030557416
@@ -3563,6 +3564,7 @@ createNode mesh -n "front_leg2Shape" -p "|Bed|front_leg2";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "pillow1" -p "Bed";
 	rename -uid "F4EF26F0-4DAA-E800-F3B6-92A7DE2082A1";
+	setAttr ".t" -type "double3" 0 0 0.052578325840240338 ;
 	setAttr ".rp" -type "double3" -0.84881706158652548 1.0877932150532881 -6.6432244562508691 ;
 	setAttr ".sp" -type "double3" -0.84881706158652548 1.0877932150532881 -6.6432244562508691 ;
 createNode mesh -n "pillow1Shape" -p "pillow1";
@@ -4553,15 +4555,15 @@ createNode mesh -n "front_legShape" -p "transform14";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "EE1A5374-48D5-2C20-31BE-3F9B1DE46F5F";
+	rename -uid "56E95604-4C6F-CF4C-B798-01B4FA3BDCF0";
 	setAttr -s 5 ".lnk";
 	setAttr -s 5 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "A8C0853A-4EEB-034B-3A3E-C59F025B3B72";
+	rename -uid "8AD3085B-4978-509C-E6C2-9EA68A606945";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "7ACFFAF2-472F-3D5A-B0BA-2D8D6CBBFEC5";
+	rename -uid "BE8769B3-462F-1CE2-02DC-3588FDABEF68";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "E7582F3A-484F-179B-2445-FDB1ECB257F7";
+	rename -uid "580ED81F-47E4-DA6D-CC2A-4996B4054CC2";
 	setAttr ".cdl" 1;
 	setAttr -s 2 ".dli[1]"  1;
 	setAttr -s 2 ".dli";
@@ -4569,7 +4571,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "A6492390-4F3D-A75B-F38D-EF8EFB03F36D";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "95FE570D-4478-F3E7-D887-F88FA7D318C8";
+	rename -uid "6D4E129A-4A04-45C5-745C-94B2CEF1AC09";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "06C0CA56-445B-C1EB-5968-61AA4E0E36C2";
 	setAttr ".g" yes;
@@ -4589,7 +4591,6 @@ createNode aiAOVDriver -s -n "defaultArnoldDisplayDriver";
 createNode displayLayer -n "bed_image";
 	rename -uid "EA1A7056-45B1-5B71-6B85-10B5E1D7DEF0";
 	setAttr ".dt" 2;
-	setAttr ".v" no;
 	setAttr ".c" 11;
 	setAttr ".ufem" -type "stringArray" 0  ;
 	setAttr ".do" 1;
@@ -4693,7 +4694,7 @@ createNode script -n "sceneConfigurationScriptNode";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "2DBF0C1A-48D8-0799-9AEB-F0B50E830107";
+	rename -uid "109EA8B8-4356-B0E6-0FDF-4B9BF4DF1331";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;

@@ -63,3 +63,11 @@ crashlytics-build.properties
 
 
 *.spp
+
+*.mtl
+
+textures/challenge/lamp_OBJ.obj
+
+textures/challenge/table.obj
+
+textures/challenge/table_OBJ.obj

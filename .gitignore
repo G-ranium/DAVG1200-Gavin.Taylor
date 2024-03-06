@@ -73,3 +73,5 @@ textures/challenge/table.obj
 textures/challenge/table_OBJ.obj
 
 textures/challenge/bed.spp.painter_lock
+
+*.zpr

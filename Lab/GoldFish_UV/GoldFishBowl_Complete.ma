@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: GoldFishBowl_Complete.ma
-//Last modified: Wed, Mar 20, 2024 07:48:52 PM
+//Last modified: Wed, Mar 20, 2024 07:48:09 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "7128581D-46F5-67A8-6F9A-228AAF5C254C";
+fileInfo "UUID" "64FC9A30-4DDF-A162-0616-909900C46F93";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "E566008D-48CB-DF0C-A0BC-4AACFA38777B";
@@ -10738,7 +10738,7 @@ createNode groupId -n "groupId7";
 	rename -uid "B05399FC-4974-F976-2FA9-F79D069BE3E8";
 	setAttr ".ihi" 0;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "F6AE9BA6-4B17-2AEF-CC16-BE88DC6F4397";
+	rename -uid "4F177861-4346-C4D4-D15F-1BB35E662C37";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 64;
